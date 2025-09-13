@@ -9,8 +9,7 @@ import {
 	Merriweather,
 	Seaweed_Script,
 } from "next/font/google";
-import MobileHeader from "@/components/Blocks/Header/MobileHeader";
-import MainFooter from "@/components/Blocks/Footer/MainFooter";
+
 
 const open_sans = Open_Sans({
 	subsets: ["latin"],
@@ -42,8 +41,8 @@ export const metadata: Metadata = {
 	title: "Your Beauty Care Haven",
 	description:
 		"Discover the latest beauty tips, products, and advice for a radiant and confident you.",
-	creator: "Ahsan Ullah",
-	authors: [{ name: "Ahsan Ullah" }],
+	creator: "Aditya Walia",
+	authors: [{ name: "Aditya Walia" }],
 	publisher: "AHTemplates",
 };
 

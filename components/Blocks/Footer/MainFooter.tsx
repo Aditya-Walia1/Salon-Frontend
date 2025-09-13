@@ -60,10 +60,10 @@ const MainFooter = () => {
 					Built by{" "}
 					<Link
 						href={
-							"https://github.com/Ahsan-Ullah1871"
+							"https://github.com/Aditya-Walia1"
 						}
 					>
-						Ahsan Ullah
+						Aditya Walia
 					</Link>
 				</p>
 
@@ -73,17 +73,16 @@ const MainFooter = () => {
 						type="email"
 						className=" text-white text-opacity-80  text-base md:text-base "
 					>
-						Admin Login
+						
 					</Link>
 
 					<Link
 						className=" text-sm font-normal text-white  text-opacity-75"
 						href={
-							"https://github.com/Ahsan-Ullah1871"
+							"https://github.com/Aditya-Walia1"
 						}
 					>
-						Terms of Use Privacy Policy Terms of
-						Service
+						
 					</Link>
 				</div>
 			</div>

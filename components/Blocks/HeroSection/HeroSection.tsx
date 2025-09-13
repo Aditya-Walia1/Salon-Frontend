@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="text-center">
           <SpecialHeader
             start_text="Welcome to"
-            spacial_text="MakeupMate"
+            spacial_text="Tele care"
             end_ext="— Book top makeup artists for bridal, party & editorial looks"
             full_text_style="px-0"
           />

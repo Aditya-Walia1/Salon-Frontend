@@ -16,18 +16,18 @@ const AllFooterLinks = () => {
 			{/* First column */}
 			<div className=" order-last md:order-1 flex flex-col gap-4">
 				<Link
-					href={"mailto:ahsanullahsunsbd@gmail.com"}
+					href={"waliaaditya82@gmail.com"}
 					type="email"
 					className=" text-white text-opacity-80  text-base md:text-lg "
 				>
 					Sent me a mail for contact
 				</Link>
 				<Link
-					href={"phone:ahsanullahsunsbd@gmail.com"}
+					href={"phone:waliaaditya@gmail.com"}
 					type="email"
 					className=" text-white text-opacity-60  text-base md:text-lg "
 				>
-					0187*9***
+					7627895970
 				</Link>
 
 				<div className=" mt-4 flex items-center gap-7">

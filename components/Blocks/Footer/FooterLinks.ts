@@ -14,7 +14,7 @@ export const company_related = {
 		{ link: "/", title: "About US" },
 		{ link: "/", title: "FAQ" },
 		{ link: "/", title: "Blog" },
-		{ link: "/", title: "Carrear" },
+		{ link: "/", title: "Carrer" },
 	],
 };
 
@@ -38,9 +38,9 @@ export const spacial_category_services = {
 export const locations_links = {
 	title: "Child Care",
 	links: [
-		{ link: "/", title: "Rangpur City" },
-		{ link: "/", title: "Dhaka city" },
-		{ link: "/", title: "Sylhet city" },
+		{ link: "/", title: "Rajpura City" },
+		{ link: "/", title: "Chandigarh city" },
+		{ link: "/", title: "Mohali city" },
 	],
 };
 export const social_links = {
