@@ -1,61 +1,62 @@
 /* eslint-disable react/no-unescaped-entities */
 import PrimaryButton from "@/components/ui/Buttons/PrimaryButton";
-import SecondaryButton from "@/components/ui/Buttons/SecondaryButton";
 import PrimaryLink from "@/components/ui/Links/PrimaryLink";
-import SecondaryLink from "@/components/ui/Links/SecondaryLinks";
 import NormalDescription from "@/components/ui/Text/Description/NormalDescription";
 import SpecialHeader from "@/components/ui/Text/Headers/SpecialHeader";
-import { ICONS } from "@/icons/AllIcons";
 import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {
-	return (
-		<div className="  relative">
-			{/* Header */}
-			<SpecialHeader
-				start_text="Welcome to"
-				spacial_text="TeleCare"
-				end_ext="Your One-Stop Destination for Family Haircare!  "
-				full_text_style=" max-w[880px]  px-7 md:px-14 "
-			/>
+  return (
+    <section className="bg-gradient-to-br from-pink-50 to-pink-100 py-8 sm:py-12">
+      <div className="max-w-4xl mx-auto px-6">
+        {/* Header + Text */}
+        <div className="text-center">
+          <SpecialHeader
+            start_text="Welcome to"
+            spacial_text="MakeupMate"
+            end_ext="— Book top makeup artists for bridal, party & editorial looks"
+            full_text_style="px-0"
+          />
 
-			{/* Desc */}
-			<NormalDescription styles="mt-8 max-w-[700px] px-8 mx-auto text-center">
-				At TeleCare, we understand the importance of
-				convenience and top-notch services for your entire
-				family. That's why we're thrilled to introduce our
-				specialized pediatric primary, urgent care, and
-				telehealth services.
-			</NormalDescription>
+          <NormalDescription styles="mt-4 max-w-xl mx-auto text-center">
+            Find professional makeup artists for every occasion — bridal,
+            party, editorial, and specialty looks. Browse categories, pick an
+            artist, and book in a few taps.
+          </NormalDescription>
 
-			{/* Buttons */}
-			<div className="  mt-8 md:mt-16 flex flex-col md:flex-row items-center justify-center gap-7 ">
-				<PrimaryLink
-					title="Book a service"
-					url={"/services"}
-					className=""
-				/>
-				{/* <SecondaryLink
-					title="Schedule a call"
-					icon={ICONS.call_icon}
-					url={"/"}
-					className=""
-				/> */}
-			</div>
+          {/* CTAs */}
+          <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3">
+            {/* Primary CTA anchors to categories on the same page */}
+            <a
+              href="#categories"
+              className="inline-flex items-center justify-center px-5 py-2.5 rounded-md bg-pink-600 text-white text-sm font-medium shadow-sm hover:opacity-95"
+            >
+              Explore categories
+            </a>
 
-			{/* Image  */}
+            {/* Secondary CTA goes to My Bookings */}
+            <PrimaryLink title="My Bookings" url="/my-bookings" className="text-sm" />
+          </div>
+        </div>
 
-			<Image
-				alt="hero Image"
-				className=" mt-10 md:mt-20"
-				src={"/img/hero-banner.png"}
-				width={1440}
-				height={700}
-			/>
-		</div>
-	);
+        {/* Image / Illustration - mobile-first: image stacked below text */}
+        <div className="mt-8">
+          <div className="w-full rounded-xl overflow-hidden shadow-sm">
+            {/* Replace /img/hero-makeup.jpg with your image in public/img/ */}
+            <Image
+              alt="Makeup hero"
+              src={"/img/hero-banner.png"}
+              width={1440}
+              height={720}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default HeroSection;
-
